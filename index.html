@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sara González — Muy pronto</title>
+<meta name="description" content="La nueva web de Sara González está en camino. Creada con inteligencia artificial por IronBrain.">
+<style>
+  :root{
+    --bg:#0e1420; --bg2:#141d2e; --ink:#eef2f8; --muted:#93a1b8;
+    --accent:#5eead4; --accent2:#818cf8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+    background:radial-gradient(1200px 800px at 80% -10%, #1d2a44 0%, var(--bg) 55%);
+    color:var(--ink); min-height:100vh; display:flex; flex-direction:column;
+  }
+  main{flex:1; display:flex; align-items:center; justify-content:center; padding:2rem}
+  .card{max-width:640px; text-align:center}
+  .badge{
+    display:inline-block; font-size:.8rem; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--accent); border:1px solid rgba(94,234,212,.35); border-radius:999px;
+    padding:.4rem 1rem; margin-bottom:1.6rem; background:rgba(94,234,212,.06);
+  }
+  h1{
+    font-size:clamp(2.2rem,6vw,3.6rem); font-weight:700; line-height:1.15; margin-bottom:1rem;
+    background:linear-gradient(90deg,var(--ink) 20%,var(--accent) 60%,var(--accent2));
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+  }
+  p.lead{font-size:1.15rem; color:var(--muted); line-height:1.7; margin-bottom:2.2rem}
+  .dots{display:flex; gap:.55rem; justify-content:center; margin-bottom:2.2rem}
+  .dots span{
+    width:10px; height:10px; border-radius:50%; background:var(--accent);
+    animation:pulse 1.4s ease-in-out infinite;
+  }
+  .dots span:nth-child(2){animation-delay:.2s; background:var(--accent2)}
+  .dots span:nth-child(3){animation-delay:.4s}
+  @keyframes pulse{0%,100%{opacity:.25; transform:scale(.85)}50%{opacity:1; transform:scale(1.15)}}
+  .steps{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:1rem; text-align:left;
+  }
+  .step{
+    background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08);
+    border-radius:14px; padding:1rem 1.1rem;
+  }
+  .step b{display:block; font-size:.95rem; margin-bottom:.3rem; color:var(--ink)}
+  .step small{color:var(--muted); line-height:1.5}
+  footer{
+    text-align:center; padding:1.4rem; color:var(--muted); font-size:.85rem;
+    border-top:1px solid rgba(255,255,255,.06);
+  }
+  footer b{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <div class="badge">Web en construcción</div>
+    <h1>Sara González</h1>
+    <p class="lead">Algo bonito está tomando forma aquí. Esta web se está creando con inteligencia artificial, paso a paso y con mimo — muy pronto estará lista.</p>
+    <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="steps">
+      <div class="step"><b>✓ Dominio activo</b><small>sglezm.github.io ya responde con conexión segura.</small></div>
+      <div class="step"><b>✓ Publicación automática</b><small>Cada mejora se publica sola, sin pasos manuales.</small></div>
+      <div class="step"><b>→ Diseño a medida</b><small>El siguiente paso: contenido y diseño personalizados.</small></div>
+    </div>
+  </div>
+</main>
+<footer>Creada con IA por <b>IronBrain</b> · 2026</footer>
+</body>
+</html>
