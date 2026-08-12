@@ -3,70 +3,287 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sara González — Muy pronto</title>
-<meta name="description" content="La nueva web de Sara González está en camino. Creada con inteligencia artificial por IronBrain.">
+<title>GNH Center Spain — Felicidad Interior Bruta</title>
+<meta name="description" content="GNH Center Spain es el centro oficial en Europa del GNH Centre Bhutan. Promovemos la Felicidad Interior Bruta (Gross National Happiness): una visión del progreso centrada en el bienestar de las personas, la comunidad y la sostenibilidad.">
+<meta property="og:title" content="GNH Center Spain — Felicidad Interior Bruta">
+<meta property="og:description" content="El centro oficial del GNH Centre Bhutan en Europa. Descubre la filosofía de la Felicidad Interior Bruta y forma parte de nuestra comunidad.">
+<meta property="og:image" content="https://sglezm.github.io/assets/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg:#0e1420; --bg2:#141d2e; --ink:#eef2f8; --muted:#93a1b8;
-    --accent:#5eead4; --accent2:#818cf8;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{
-    font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
-    background:radial-gradient(1200px 800px at 80% -10%, #1d2a44 0%, var(--bg) 55%);
-    color:var(--ink); min-height:100vh; display:flex; flex-direction:column;
-  }
-  main{flex:1; display:flex; align-items:center; justify-content:center; padding:2rem}
-  .card{max-width:640px; text-align:center}
-  .badge{
-    display:inline-block; font-size:.8rem; letter-spacing:.12em; text-transform:uppercase;
-    color:var(--accent); border:1px solid rgba(94,234,212,.35); border-radius:999px;
-    padding:.4rem 1rem; margin-bottom:1.6rem; background:rgba(94,234,212,.06);
-  }
-  h1{
-    font-size:clamp(2.2rem,6vw,3.6rem); font-weight:700; line-height:1.15; margin-bottom:1rem;
-    background:linear-gradient(90deg,var(--ink) 20%,var(--accent) 60%,var(--accent2));
-    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
-  }
-  p.lead{font-size:1.15rem; color:var(--muted); line-height:1.7; margin-bottom:2.2rem}
-  .dots{display:flex; gap:.55rem; justify-content:center; margin-bottom:2.2rem}
-  .dots span{
-    width:10px; height:10px; border-radius:50%; background:var(--accent);
-    animation:pulse 1.4s ease-in-out infinite;
-  }
-  .dots span:nth-child(2){animation-delay:.2s; background:var(--accent2)}
-  .dots span:nth-child(3){animation-delay:.4s}
-  @keyframes pulse{0%,100%{opacity:.25; transform:scale(.85)}50%{opacity:1; transform:scale(1.15)}}
-  .steps{
-    display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:1rem; text-align:left;
-  }
-  .step{
-    background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08);
-    border-radius:14px; padding:1rem 1.1rem;
-  }
-  .step b{display:block; font-size:.95rem; margin-bottom:.3rem; color:var(--ink)}
-  .step small{color:var(--muted); line-height:1.5}
-  footer{
-    text-align:center; padding:1.4rem; color:var(--muted); font-size:.85rem;
-    border-top:1px solid rgba(255,255,255,.06);
-  }
-  footer b{color:var(--accent)}
+:root{
+  --verde:#3d5226; --verde-osc:#2c3d1b; --granate:#6d3a3f; --oro:#c99a2e; --oro-claro:#e6c874;
+  --crema:#faf6ef; --crema-2:#f3ecdf; --tinta:#26251f; --tinta-suave:#5c584d;
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',-apple-system,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--tinta);background:var(--crema);line-height:1.65;font-size:17px}
+img{max-width:100%;display:block}
+a{color:var(--verde);text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;color:var(--tinta)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--granate);margin-bottom:14px}
+.btn{display:inline-block;padding:14px 30px;border-radius:999px;font-weight:600;font-size:15.5px;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-oro{background:var(--oro);color:#fff;box-shadow:0 4px 18px rgba(201,154,46,.35)}
+.btn-oro:hover{background:#b8891f}
+.btn-linea{border:1.5px solid rgba(255,255,255,.65);color:#fff}
+.btn-linea:hover{background:rgba(255,255,255,.12)}
+.btn-verde{background:var(--verde);color:#fff}
+.btn-verde:hover{background:var(--verde-osc)}
+
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(250,246,239,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(38,37,31,.08);transition:box-shadow .3s}
+nav .bar{max-width:1180px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;gap:28px}
+nav .marca{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:19px;color:var(--tinta);font-weight:600}
+nav .marca img{width:46px;height:46px}
+nav .enlaces{margin-left:auto;display:flex;align-items:center;gap:26px}
+nav .enlaces a{font-size:15px;font-weight:500;color:var(--tinta-suave)}
+nav .enlaces a:hover{color:var(--verde)}
+nav .enlaces .btn{padding:10px 22px}
+.menu-btn{display:none;margin-left:auto;background:none;border:none;font-size:26px;color:var(--tinta);cursor:pointer}
+
+/* Hero */
+header{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;background:#1a1610}
+header .fondo{position:absolute;inset:0;background:url('assets/hero.jpg') center 30%/cover no-repeat}
+header .velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,8,.35) 0%,rgba(20,16,8,.15) 40%,rgba(20,16,8,.78) 100%)}
+header .cont{position:relative;padding:140px 24px 90px;max-width:1120px;margin:0 auto;width:100%}
+header .kicker{color:var(--oro-claro)}
+header h1{color:#fff;font-size:clamp(38px,5.4vw,64px);max-width:15ch;margin-bottom:22px}
+header p{font-size:clamp(17px,2vw,20px);max-width:56ch;color:rgba(255,255,255,.88);margin-bottom:34px}
+header .ctas{display:flex;gap:16px;flex-wrap:wrap}
+
+/* Secciones */
+section{padding:96px 0}
+.centrado{text-align:center;max-width:64ch;margin:0 auto 56px}
+.centrado h2{font-size:clamp(30px,3.6vw,42px);margin-bottom:16px}
+.centrado p{color:var(--tinta-suave);font-size:18px}
+
+/* Pilares */
+.pilares{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.pilar{background:#fff;border-radius:18px;padding:34px 26px;border:1px solid rgba(38,37,31,.07);box-shadow:0 2px 14px rgba(38,37,31,.04);transition:transform .25s,box-shadow .25s}
+.pilar:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(38,37,31,.09)}
+.pilar .num{font-family:var(--serif);font-size:15px;color:var(--oro);letter-spacing:.1em;margin-bottom:12px}
+.pilar h3{font-size:20px;margin-bottom:10px}
+.pilar p{font-size:15px;color:var(--tinta-suave)}
+
+/* Split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split .foto{border-radius:22px;overflow:hidden;box-shadow:0 18px 44px rgba(38,37,31,.16)}
+.split .foto img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.split h2{font-size:clamp(28px,3.2vw,38px);margin-bottom:20px}
+.split p{color:var(--tinta-suave);margin-bottom:16px}
+.split .firma{font-family:var(--serif);color:var(--granate);font-size:18px;font-style:italic}
+.fondo-2{background:var(--crema-2)}
+
+/* Actividades */
+.tarjetas{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.tarjeta{background:#fff;border-radius:20px;overflow:hidden;border:1px solid rgba(38,37,31,.07);box-shadow:0 2px 14px rgba(38,37,31,.05);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.tarjeta:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(38,37,31,.11)}
+.tarjeta img{height:210px;width:100%;object-fit:cover}
+.tarjeta .cuerpo{padding:26px 26px 30px;display:flex;flex-direction:column;flex:1}
+.tarjeta h3{font-size:21px;margin-bottom:10px}
+.tarjeta p{font-size:15px;color:var(--tinta-suave);flex:1}
+.tarjeta .mas{margin-top:16px;font-weight:600;font-size:15px;color:var(--granate)}
+
+/* Amig@ */
+.banda{background:linear-gradient(135deg,var(--verde-osc),var(--verde) 60%,#4a6330);color:#fff;border-radius:28px;padding:76px 60px;display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;position:relative;overflow:hidden}
+.banda::after{content:'';position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:url('assets/logo.png') center/contain no-repeat;opacity:.10;filter:brightness(3)}
+.banda h2{color:#fff;font-size:clamp(28px,3.4vw,40px);margin-bottom:18px}
+.banda p{color:rgba(255,255,255,.88);margin-bottom:14px}
+.banda .cuota{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:20px;padding:34px;text-align:center;position:relative;z-index:1}
+.banda .cuota .precio{font-family:var(--serif);font-size:44px;color:var(--oro-claro)}
+.banda .cuota .precio span{font-size:18px;color:rgba(255,255,255,.75)}
+.banda .cuota .o{margin:6px 0 2px;color:rgba(255,255,255,.7);font-size:14px;text-transform:uppercase;letter-spacing:.12em}
+.banda .cuota .btn{margin-top:22px}
+.banda .nota{font-size:13.5px;color:rgba(255,255,255,.62);margin-top:14px}
+
+/* Contacto */
+.contacto{text-align:center}
+.contacto h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px}
+.contacto p{color:var(--tinta-suave);max-width:52ch;margin:0 auto 32px}
+
+/* Footer */
+footer{background:#211f19;color:rgba(255,255,255,.72);padding:56px 0 34px;font-size:14.5px}
+footer .arriba{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+footer img{width:52px;height:52px;filter:brightness(1.9)}
+footer .nombre{font-family:var(--serif);font-size:19px;color:#fff}
+footer .enlaces-f{display:flex;gap:22px;flex-wrap:wrap;margin-left:auto}
+footer a{color:rgba(255,255,255,.72)}
+footer a:hover{color:var(--oro-claro)}
+footer .legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13.5px;color:rgba(255,255,255,.5)}
+
+/* Reveal */
+.rev{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rev.vis{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:900px){
+  .pilares{grid-template-columns:repeat(2,1fr)}
+  .tarjetas{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr;gap:36px}
+  .banda{grid-template-columns:1fr;padding:50px 30px}
+  nav .enlaces{display:none;position:absolute;top:100%;left:0;right:0;background:var(--crema);flex-direction:column;padding:22px;gap:18px;border-bottom:1px solid rgba(38,37,31,.1)}
+  nav .enlaces.abierto{display:flex}
+  .menu-btn{display:block}
+  section{padding:70px 0}
+}
+@media (max-width:560px){.pilares{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<main>
-  <div class="card">
-    <div class="badge">Web en construcción</div>
-    <h1>Sara González</h1>
-    <p class="lead">Algo bonito está tomando forma aquí. Esta web se está creando con inteligencia artificial, paso a paso y con mimo — muy pronto estará lista.</p>
-    <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
-    <div class="steps">
-      <div class="step"><b>✓ Dominio activo</b><small>sglezm.github.io ya responde con conexión segura.</small></div>
-      <div class="step"><b>✓ Publicación automática</b><small>Cada mejora se publica sola, sin pasos manuales.</small></div>
-      <div class="step"><b>→ Diseño a medida</b><small>El siguiente paso: contenido y diseño personalizados.</small></div>
+
+<nav>
+  <div class="bar">
+    <a class="marca" href="#inicio"><img src="assets/logo.png" alt="Logo GNH Center Spain">GNH Center Spain</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
+    <div class="enlaces">
+      <a href="#filosofia">La filosofía</a>
+      <a href="#centro">El centro</a>
+      <a href="#actividades">Actividades</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn-oro" href="#amigo">Hazte Amig@</a>
     </div>
   </div>
-</main>
-<footer>Creada con IA por <b>IronBrain</b> · 2026</footer>
+</nav>
+
+<header id="inicio">
+  <div class="fondo" role="img" aria-label="Jóvenes monjes sonriendo frente a un dzong en Bután"></div>
+  <div class="velo"></div>
+  <div class="cont">
+    <p class="kicker">El centro oficial del GNH Centre Bhutan en Europa</p>
+    <h1>La felicidad también es una forma de progreso</h1>
+    <p>Somos GNH Center Spain. Acercamos a España la <strong>Felicidad Interior Bruta</strong> (Gross National Happiness), la filosofía de Bután que entiende el desarrollo desde el bienestar de las personas, la comunidad, la cultura y la naturaleza.</p>
+    <div class="ctas">
+      <a class="btn btn-oro" href="#amigo">Hazte Amig@ de GNH</a>
+      <a class="btn btn-linea" href="#filosofia">Descubre la filosofía</a>
+    </div>
+  </div>
+</header>
+
+<section id="filosofia">
+  <div class="wrap">
+    <div class="centrado rev">
+      <p class="kicker">¿Qué es la Felicidad Interior Bruta?</p>
+      <h2>Una visión del progreso más amplia que el crecimiento económico</h2>
+      <p>Originada en Bután, la Felicidad Interior Bruta propone medir el avance de una sociedad por el bienestar real de sus personas. Se apoya en cuatro pilares:</p>
+    </div>
+    <div class="pilares">
+      <div class="pilar rev"><div class="num">01</div><h3>Desarrollo equitativo</h3><p>Un desarrollo socioeconómico justo y sostenible, al servicio de las personas.</p></div>
+      <div class="pilar rev"><div class="num">02</div><h3>Conservación ambiental</h3><p>El cuidado de la naturaleza como condición del bienestar presente y futuro.</p></div>
+      <div class="pilar rev"><div class="num">03</div><h3>Promoción cultural</h3><p>Preservar y celebrar la cultura, las tradiciones y los valores compartidos.</p></div>
+      <div class="pilar rev"><div class="num">04</div><h3>Buen gobierno</h3><p>Instituciones transparentes y responsables, orientadas al bien común.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="fondo-2" id="camino">
+  <div class="wrap split">
+    <div class="foto rev"><img src="assets/banderas.jpg" alt="Banderas de oración en el Himalaya" loading="lazy"></div>
+    <div class="rev">
+      <p class="kicker">Un camino de transformación</p>
+      <h2>El cambio social sostenible empieza por dentro</h2>
+      <p>GNH es un camino que invita a la transformación interior y al aprendizaje, imprescindibles para permitir un cambio social sostenible.</p>
+      <p>Ofrecemos un espacio único de reflexión, aprendizaje y acción que inspira a las personas a promover la felicidad y la compasión hacia uno mismo, la familia, la comunidad, el país y el mundo.</p>
+      <p class="firma">«Tashi Delek» — el saludo butanés que desea buena fortuna</p>
+    </div>
+  </div>
+</section>
+
+<section id="centro">
+  <div class="wrap split">
+    <div class="rev">
+      <p class="kicker">El centro</p>
+      <h2>Quiénes somos</h2>
+      <p>El <strong>GNH Center Spain</strong>, creado en 2019 bajo el patrocinio del GNH Centre Bhutan, es el <strong>único centro oficial y autorizado en Europa</strong>. Somos una organización sin ánimo de lucro cuya finalidad es mostrar los beneficios prácticos que la Felicidad Interior Bruta puede tener a nivel individual y colectivo.</p>
+      <p>Generamos conocimiento, comunidad e iniciativas que contribuyen a una sociedad más consciente, equilibrada y orientada al bienestar colectivo.</p>
+      <a class="btn btn-verde" href="https://gnhspain.es/quienes-somos/">Conoce al equipo</a>
+    </div>
+    <div class="foto rev"><img src="assets/tigersnest.jpg" alt="Monasterio del Nido del Tigre, Bután" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="fondo-2" id="actividades">
+  <div class="wrap">
+    <div class="centrado rev">
+      <p class="kicker">Actividades</p>
+      <h2>Conocer, conectar y participar</h2>
+      <p>Eventos presenciales, charlas, viajes y contenidos para acercar la filosofía GNH y la cultura de Bután.</p>
+    </div>
+    <div class="tarjetas">
+      <a class="tarjeta rev" href="https://gnhspain.es/programas/">
+        <img src="assets/dzong.jpg" alt="Dzong de Rinpung, Paro" loading="lazy">
+        <div class="cuerpo"><h3>Viajes a Bután</h3><p>Viajes con propósito para conocer de primera mano el país que inspiró la Felicidad Interior Bruta.</p><span class="mas">Ver programas →</span></div>
+      </a>
+      <a class="tarjeta rev" href="https://gnhspain.es/programas/actividades/">
+        <img src="assets/danza.jpg" alt="Danza tradicional butanesa" loading="lazy">
+        <div class="cuerpo"><h3>Encuentros y conferencias</h3><p>Charlas, proyecciones y encuentros presenciales con expertos y comunidad, en España.</p><span class="mas">Ver actividades →</span></div>
+      </a>
+      <a class="tarjeta rev" href="https://gnhspain.es/category/blog/">
+        <img src="assets/hero.jpg" alt="Jóvenes monjes en Bután" loading="lazy">
+        <div class="cuerpo"><h3>Blog y contenidos</h3><p>Artículos, noticias y relatos de viaje para profundizar en GNH y en la cultura de Bután.</p><span class="mas">Leer el blog →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="amigo">
+  <div class="wrap">
+    <div class="banda rev">
+      <div>
+        <p class="kicker" style="color:var(--oro-claro)">Comunidad</p>
+        <h2>Hazte Amig@ de GNH</h2>
+        <p>Los Amig@s de GNH hacen posible nuestra labor. Con tu aportación participas en todas las actividades y contenidos de la asociación y ayudas a divulgar los principios y valores de la filosofía de la Felicidad del Reino de Bután.</p>
+        <p>Forma parte de una comunidad que cree en una sociedad más consciente, equilibrada y orientada al bienestar colectivo.</p>
+      </div>
+      <div class="cuota">
+        <div class="precio">10 €<span>/mes</span></div>
+        <div class="o">o bien</div>
+        <div class="precio" style="font-size:30px">120 €<span>/año</span></div>
+        <a class="btn btn-oro" href="https://gnhspain.es/asociate/">Quiero apuntarme</a>
+        <p class="nota">Muy pronto: aportaciones y donaciones online directamente desde esta web.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap rev">
+    <p class="kicker">Contacto</p>
+    <h2>Estamos a tu disposición</h2>
+    <p>¿Dudas sobre los programas? ¿Quieres colaborar como persona u organización? Escríbenos y desarrollamos contigo una y mil formas de participar en la comunidad.</p>
+    <a class="btn btn-verde" href="https://gnhspain.es/contacto/">Escríbenos</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="arriba">
+      <img src="assets/logo.png" alt="Logo GNH Center Spain">
+      <span class="nombre">GNH Center Spain</span>
+      <div class="enlaces-f">
+        <a href="#filosofia">La filosofía</a>
+        <a href="#centro">El centro</a>
+        <a href="#actividades">Actividades</a>
+        <a href="https://gnhspain.es/asociate/">Hazte Amig@</a>
+        <a href="https://gnhspain.es/contacto/">Contacto</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2019–2026 GNH Center Spain · Centro oficial del GNH Centre Bhutan en Europa</span>
+      <a href="https://gnhspain.es/aviso-legal-y-privacidad/">Aviso legal y privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('nav .enlaces a').forEach(a => a.addEventListener('click', () => document.querySelector('nav .enlaces').classList.remove('abierto')));
+</script>
 </body>
 </html>
