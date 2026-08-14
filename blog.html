@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noticias y contenidos — GNH Center Spain</title>
+<meta name="description" content="Noticias, proyectos y contenidos del GNH Center Spain: viajes a Bután, proyecciones de cine butanés, boletines y proyectos solidarios.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<nav>
+  <div class="bar">
+    <a class="marca" href="index.html"><img src="assets/logo.png" alt="Logo GNH Center Spain">GNH Center Spain</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
+    <div class="enlaces">
+      <a href="index.html#filosofia">La filosofía</a>
+      <a href="quienes-somos.html">Quiénes somos</a>
+      <a href="programas.html">Programas</a>
+      <a href="blog.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pagina-hero">
+  <div class="wrap">
+    <p class="miga"><a href="index.html">Inicio</a> · Noticias y contenidos</p>
+    <p class="kicker">Blog</p>
+    <h1>Noticias y contenidos</h1>
+    <p>Artículos, noticias y relatos para profundizar en GNH y en la cultura de Bután.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="noticias"><div class="noticia rev"><div class="fecha">Viajes</div><h3>Viaje a Bután · Septiembre 2024</h3><p>Crónica y materiales del último viaje con propósito organizado por la asociación al país de la Felicidad Interior Bruta.</p></div>
+<div class="noticia rev"><div class="fecha">Boletín</div><h3>Noticias GNH · Marzo 2024</h3><p>Resumen de novedades de la asociación y del universo GNH: actividades, encuentros y actualidad de Bután.</p></div>
+<div class="noticia rev"><div class="fecha">Proyecto</div><h3>Music4All Bhutan</h3><p>Actualización del proyecto solidario de música impulsado junto a la comunidad para acercar la educación musical a Bután.</p></div>
+<div class="noticia rev"><div class="fecha">Cine</div><h3>Proyección «Lunana: A Yak in the Classroom» · Cines Verdi</h3><p>Proyección de la película butanesa nominada al Óscar, con coloquio posterior sobre la cultura y los valores de Bután.</p></div>
+<div class="noticia rev"><div class="fecha">Comunidad</div><h3>Nuevas actividades y proyecto de música</h3><p>Presentación del calendario de actividades de la asociación y del nuevo proyecto musical de la comunidad GNH.</p></div>
+<div class="noticia rev"><div class="fecha">Cine</div><h3>Proyección «Lunana» · 3 de noviembre</h3><p>Encuentro presencial en torno al cine butanés, con foro de discusión posterior entre asistentes y expertos.</p></div></div>
+    <div class="centrado rev" style="margin:56px auto 0">
+      <p>Estamos trasladando el blog completo a esta nueva web. Mientras tanto, si quieres recibir las noticias y convocatorias de la asociación, escríbenos o hazte Amig@ de GNH.</p>
+      <p style="margin-top:20px"><a class="btn btn-verde" href="contacto.html">Escríbenos</a>&nbsp;&nbsp;<a class="btn btn-oro" href="asociate.html">Hazte Amig@</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="arriba">
+      <img src="assets/logo.png" alt="Logo GNH Center Spain">
+      <span class="nombre">GNH Center Spain</span>
+      <div class="enlaces-f">
+        <a href="index.html#filosofia">La filosofía</a>
+        <a href="quienes-somos.html">Quiénes somos</a>
+        <a href="programas.html">Programas</a>
+        <a href="blog.html">Noticias</a>
+        <a href="asociate.html">Hazte Amig@</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2019–2026 GNH Center Spain · Centro oficial del GNH Centre Bhutan en Europa</span>
+      <a href="aviso-legal.html">Aviso legal y privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('nav .enlaces a').forEach(a => a.addEventListener('click', () => document.querySelector('nav .enlaces').classList.remove('abierto')));
+</script>
+</body>
+</html>
