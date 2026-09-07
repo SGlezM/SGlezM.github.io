@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viaje del Presidente de GNH Spain a Bután — GNH Center Spain</title>
+<meta name="description" content="Ian Triay, Presidente de GNH Center Spain y Cónsul General Honorario de Bután en España, se reúne con el nuevo Primer Ministro de Bután.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<nav>
+  <div class="bar">
+    <a class="marca" href="index.html"><img src="assets/logo.png" alt="Logo GNH Center Spain">GNH Center Spain</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
+    <div class="enlaces">
+      <a href="index.html#filosofia">La filosofía</a>
+      <a href="index.html#centro">El centro</a>
+      <a href="index.html#actividades">Actividades</a>
+      <a href="blog.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pagina-hero">
+  <div class="wrap">
+    <p class="miga"><a href="index.html">Inicio</a> · <a href="blog.html">Noticias</a> · Viaje del Presidente de GNH Spain a B…</p>
+    <p class="kicker">Viajes</p>
+    <h1>Viaje del Presidente de GNH Spain a Bután</h1>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="prosa">
+<p>El pasado mes de Julio el Presidente de GNH CENTER SPAIN y Cónsul General Honorario de Bután en España, Ian Triay, estuvo en Bután para conocer al nuevo Primer Ministro del país y a su gobierno.</p>
+<p>Fue una visita muy fructífera: el nuevo ejecutivo Butanés conjuga muy bien la experiencia y la juventud augurando un buen futuro. Las reuniones de nuestro Presidente con los distintos ministros fueron sumamente interesantes para el desarrollo de las relaciones bilaterales entre los dos países incluyendo las áreas de Agricultura, Educación y Finanzas entre otras.</p>
+<p>Aunque lo más importante fue la Audiencia que le concedió Su Majestad el Rey Jigme Kesar Namgyel Wangchuk con quien nuestro Presidente tuvo el honor de hablar extensamente, quedando impresionado por su amplio conocimiento de temas muy distintos en todo el mundo; sin duda un Jefe de Estado a la altura de las circunstancias del mundo actual y además un jefe de estado muy querido por su pueblo.</p>
+<p>Destacamos la reunión de nuestro Presidente con el Secretario General del Comité de GNH por la conexión de este departamento gubernamental con nuestro proyecto en España. El concepto de GNH está siendo rigurosamente aplicado y defendido por el gobierno de Bután como consta en la Constitución del país. No hay proyecto, sea cual sea su origen, que no tenga que superar las exigencias impuestas por GNH antes de ser aprobado .</p>
+<img src="assets/blog/Audiencia-Presidente-GNH-por-Rey-de-Butan.jpg" alt="Viaje del Presidente de GNH Spain a Bután" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="arriba">
+      <img src="assets/logo.png" alt="Logo GNH Center Spain">
+      <span class="nombre">GNH Center Spain</span>
+      <div class="enlaces-f">
+        <a href="index.html#filosofia">La filosofía</a>
+        <a href="index.html#centro">El centro</a>
+        <a href="index.html#actividades">Actividades</a>
+        <a href="blog.html">Noticias</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2019–2026 GNH Center Spain · Centro oficial del GNH Centre Bhutan en Europa</span>
+      <a href="aviso-legal.html">Aviso legal y privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('nav .enlaces a').forEach(a => a.addEventListener('click', () => document.querySelector('nav .enlaces').classList.remove('abierto')));
+</script>
+</body>
+</html>
