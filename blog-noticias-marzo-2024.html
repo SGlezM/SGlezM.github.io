@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noticias GNH · Marzo 2024 — GNH Center Spain</title>
+<meta name="description" content="Resumen de novedades de la asociación y del universo GNH: la escuela de música en Bután, GNH en universidades y el Día Internacional de la Felicidad.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<nav>
+  <div class="bar">
+    <a class="marca" href="index.html"><img src="assets/logo.png" alt="Logo GNH Center Spain">GNH Center Spain</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
+    <div class="enlaces">
+      <a href="index.html#filosofia">La filosofía</a>
+      <a href="index.html#centro">El centro</a>
+      <a href="index.html#actividades">Actividades</a>
+      <a href="blog.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pagina-hero">
+  <div class="wrap">
+    <p class="miga"><a href="index.html">Inicio</a> · <a href="blog.html">Noticias</a> · Noticias GNH · Marzo 2024</p>
+    <p class="kicker">Boletín</p>
+    <h1>Noticias GNH · Marzo 2024</h1>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="prosa">
+<p>Escuela de Música en Bután y campamento de verano</p>
+<p>Seguimos avanzando con la escuela de música en Bután a través del proyecto Music4All (B+NESDG cofunded by EU) para niños desfavorecidos: ya hemos alquilado un edificio,adquirido significantes instrumentos musicales y ya tenemos instructores locales formados a través de la Fundación Acción por la Música en España y un director butanés encargado de coordinarlo. Esto ha cambiado literalmente la vida de más de treinta niños y sus familias, con unos medios muy limitados, y les ha dado motivación para el futuro, ilusión para vivir y mayor felicidad</p>
+<p>El año pasado hicimos el segundo campamento de verano y fue más exitoso todavía que el primero. Os mando un link https://youtu.be/bSKkdrCPWWk para que podáis ver el impacto que para nosotros es algo habitual pero para ellos muy especial.</p>
+<p>El GNH en las Universidades y el Dr. Mario Alonso Puig.</p>
+<p>También quiero mencionar expresamente a nuestro socio fundador y querido amigo, el Dr Mario Alonso Puig , que a través tanto de sus conferencias como de sus libros alude con frecuencia a Bután y le otorga a su filosofía de GNH una importancia relevante como influencia en su formación y en su manera de pensar.</p>
+<p>El tema de GNH es estudiado ya en varias de las más prestigiosas universidades del mundo y el rey de Bután, muy recientemente, reveló los planes de su sueño para la construcción de una “Ciudad de Mindfulness” en el sur de Bután.</p>
+<p>Finalmente,los que visteis la película butanesa en el cine Verdi hace un año, “Lunana :un yak en clase” , estaréis encantados de saber que estamos planificando proyectar otra muy exitosa, “El monje y la pistola”. Os mantendremos informados.</p>
+<p>Se acerca el Día de la Felicidad internacional, el 20 de marzo , impulsado por Bután en las Naciones Unidas, y aprovecho para desearos todo lo mejor y para pediros que sigáis colaborando con nuestra Asociación para seguir avanzando en nuestros proyectos, cada aportación es bienvenida y cada céntimo va directamente a Bután.</p>
+<p>Asociarse al Centro GNH Spain</p>
+<div class="galeria"><img src="assets/blog/Logo-Music-For-Buthan.jpg" alt="Noticias GNH · Marzo 2024" loading="lazy"><img src="assets/blog/Mario-Alonso-Puig-.jpg" alt="Noticias GNH · Marzo 2024" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="arriba">
+      <img src="assets/logo.png" alt="Logo GNH Center Spain">
+      <span class="nombre">GNH Center Spain</span>
+      <div class="enlaces-f">
+        <a href="index.html#filosofia">La filosofía</a>
+        <a href="index.html#centro">El centro</a>
+        <a href="index.html#actividades">Actividades</a>
+        <a href="blog.html">Noticias</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2019–2026 GNH Center Spain · Centro oficial del GNH Centre Bhutan en Europa</span>
+      <a href="aviso-legal.html">Aviso legal y privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('nav .enlaces a').forEach(a => a.addEventListener('click', () => document.querySelector('nav .enlaces').classList.remove('abierto')));
+</script>
+</body>
+</html>
