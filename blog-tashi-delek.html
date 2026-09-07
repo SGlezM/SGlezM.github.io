@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tashi Delek — GNH Center Spain</title>
+<meta name="description" content="Origen, significado y uso de &quot;Tashi Delek&quot;, el saludo tradicional butanés.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<nav>
+  <div class="bar">
+    <a class="marca" href="index.html"><img src="assets/logo.png" alt="Logo GNH Center Spain">GNH Center Spain</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
+    <div class="enlaces">
+      <a href="index.html#filosofia">La filosofía</a>
+      <a href="index.html#centro">El centro</a>
+      <a href="index.html#actividades">Actividades</a>
+      <a href="blog.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pagina-hero">
+  <div class="wrap">
+    <p class="miga"><a href="index.html">Inicio</a> · <a href="blog.html">Noticias</a> · Tashi Delek</p>
+    <p class="kicker">Cultura</p>
+    <h1>Tashi Delek</h1>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="prosa">
+<h2>Origen, significado y uso de Tashi Delek</h2>
+<p>Tashi significa auspicioso y Delek (o Deleg, Deleh) significa bien o bien. [1] Es difícil y quizás imposible de traducir correctamente al español. [2] Diferentes autores lo interpretan como “Bendiciones y buena suerte” o “Que todos los signos favorables lleguen a este entorno”. [3] [4]</p>
+<p>Tashi delek se usa tradicionalmente como parte de una invocación más grande en Losar . [5] [6] Con la auto-deportación del Dalai Lama y la creación de la diáspora tibetana , las autoridades en el exilio promovieron el uso del “tashi delek” como un saludo para todo propósito que los patrocinadores extranjeros podrían recoger fácilmente. [5] A los estudiantes del sistema escolar del exilio se les enseña que este uso de “tashi delek” tiene sus raíces en el Tíbet premoderno, y que el uso exclusivo de “Tashi delek” por los tibetanos chinos es corrupto. [6] Los operadores turisiticos han promovido la frase, junto con las bufandas khata y las banderas de oración , como aspectos esenciales y cómodos de la cultura tibetana , un hecho que ha causado resentimiento entre algunos religiosos tibetanos. “Tashi Delek” es el nombre de un sitio web que proporciona información sobre la nación de Bután y promueve el turismo. [7]</p>
+<h2>Referencias</h2>
+<ol><li>^ Idioma y literatura , Khandro.net , obtenido el 2009-05-12</li><li>^ Oha 2008 , pp. 91–92</li><li>^ Dresser 1999 , p. 43</li><li>^ Jackson 2004 , p. 292</li><li>^ Saltar a: a b French, Patrick (2009). Tibet, Tibet . Random House Digital. pag. 28.</li><li>^ Saltar a: a b Frechette, Ann; Schatzberg, Walter (2002). Tibetanos en Nepal: La dinámica de la asistencia internacional entre una comunidad en el exilio .Libros de Berghahn. pp. 108-109.</li><li>^ Oakes, Tim; Sutton, Donald (2010). Fe en exhibición: religión, turismo y el estado chino .Rowman y Littlefield. pag. 106.</li></ol>
+<h2>HAZTE Amig@ de GNH</h2>
+<p>El objetivo primordial de GNH es divulgar los principios y valores de la filosofía de la Felicidad del Reino de Bután a través de eventos, conferencias, contenidos y programas.</p>
+<p>Como Amig@ de GNH podrás participar en todas las actividades y contenidos que organice la Asociación GNH Center Spain simplemente cumplimentando el formulario siguiente y haciendo el ingreso de la cuota anual de 120 € año o 10 € mes.</p>
+<p>Acceso al formulario para hacerse Amig@ de GNH.</p>
+<p>APUNTARSE</p>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="arriba">
+      <img src="assets/logo.png" alt="Logo GNH Center Spain">
+      <span class="nombre">GNH Center Spain</span>
+      <div class="enlaces-f">
+        <a href="index.html#filosofia">La filosofía</a>
+        <a href="index.html#centro">El centro</a>
+        <a href="index.html#actividades">Actividades</a>
+        <a href="blog.html">Noticias</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2019–2026 GNH Center Spain · Centro oficial del GNH Centre Bhutan en Europa</span>
+      <a href="aviso-legal.html">Aviso legal y privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('nav .enlaces a').forEach(a => a.addEventListener('click', () => document.querySelector('nav .enlaces').classList.remove('abierto')));
+</script>
+</body>
+</html>
