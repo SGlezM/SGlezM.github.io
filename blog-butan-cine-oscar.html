@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excelente noticia para Bután en el mundo del cine — GNH Center Spain</title>
+<meta name="description" content="&quot;Lunana: A Yak in the Classroom&quot; logra la nominación al Óscar como Mejor Película Extranjera para Bután.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<nav>
+  <div class="bar">
+    <a class="marca" href="index.html"><img src="assets/logo.png" alt="Logo GNH Center Spain">GNH Center Spain</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
+    <div class="enlaces">
+      <a href="index.html#filosofia">La filosofía</a>
+      <a href="index.html#centro">El centro</a>
+      <a href="index.html#actividades">Actividades</a>
+      <a href="blog.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pagina-hero">
+  <div class="wrap">
+    <p class="miga"><a href="index.html">Inicio</a> · <a href="blog.html">Noticias</a> · Excelente noticia para Bután en el mu…</p>
+    <p class="kicker">Cine</p>
+    <h1>Excelente noticia para Bután en el mundo del cine</h1>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="prosa">
+<p>Querid@s amig@s ,</p>
+<p>Para los que no lo hayáis visto todavía me complace comunicaros que una película butanesa ha sido elegida entre las cinco candidatas finales para el Oscar a la mejor película extranjera de 2022 .</p>
+<p>Esto constituye un orgullo tremendo para Bután compitiendo con países de todo el mundo con muchos más recursos en este campo.</p>
+<p>La película se llama “Lunana:un Yak en la Clase” y ha recibido excelentes críticas tanto del público como de profesionales del sector.</p>
+<p>Muy brevemente, trata sobre un joven maestro que vive con su abuela en una ciudad grande de Bután y que sueña con emigrar a Australia como cantante. Pero su sueño le impide rendir en su trabajo y sus superiores le envían a un pueblo remoto en el Himalaya que se llama Lunana; su vida sufrirá un cambio radical ,alejado de las comodidades pero compensado por la espiritualidad y la belleza de su nuevo entorno………….</p>
+<p>Espero poder organizar un pase para la película este año si las condiciones nos lo permiten.</p>
+<p>Tashi Delek!</p>
+<p>Ian Triay</p>
+<p>Presidente GNH Center Spain</p>
+<img src="assets/blog/Lunana_A_Yak_in_the_Classroom-512391213-large.jpg" alt="Excelente noticia para Bután en el mundo del cine" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="arriba">
+      <img src="assets/logo.png" alt="Logo GNH Center Spain">
+      <span class="nombre">GNH Center Spain</span>
+      <div class="enlaces-f">
+        <a href="index.html#filosofia">La filosofía</a>
+        <a href="index.html#centro">El centro</a>
+        <a href="index.html#actividades">Actividades</a>
+        <a href="blog.html">Noticias</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2019–2026 GNH Center Spain · Centro oficial del GNH Centre Bhutan en Europa</span>
+      <a href="aviso-legal.html">Aviso legal y privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('nav .enlaces a').forEach(a => a.addEventListener('click', () => document.querySelector('nav .enlaces').classList.remove('abierto')));
+</script>
+</body>
+</html>
