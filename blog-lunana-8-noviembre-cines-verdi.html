@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyección «Lunana: A Yak in the Classroom» · Cines Verdi — GNH Center Spain</title>
+<meta name="description" content="Pase benéfico de la película butanesa nominada al Óscar, con el fin de recaudar fondos para el proyecto de música en Bután.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<nav>
+  <div class="bar">
+    <a class="marca" href="index.html"><img src="assets/logo.png" alt="Logo GNH Center Spain">GNH Center Spain</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
+    <div class="enlaces">
+      <a href="index.html#filosofia">La filosofía</a>
+      <a href="index.html#centro">El centro</a>
+      <a href="index.html#actividades">Actividades</a>
+      <a href="blog.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pagina-hero">
+  <div class="wrap">
+    <p class="miga"><a href="index.html">Inicio</a> · <a href="blog.html">Noticias</a> · Proyección «Lunana: A Yak in the Clas…</p>
+    <p class="kicker">Cine</p>
+    <h1>Proyección «Lunana: A Yak in the Classroom» · Cines Verdi</h1>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="prosa">
+<p>Querid@s amigos de www.gnhcenterspain.org</p>
+<p>Como continuación de mi mensaje el pasado día 17 de septiembre me complace confirmaros que el pase de la película butanesa “Lunana:un yak en la clase” se ha cambiado del 3 al 8 de noviembre por razones técnicas, con lo cual los datos del evento quedan de la siguiente forma:</p>
+<p>FECHA y HORA : Martes 8 de noviembre 2022 a las 18:15 horas LUGAR : CINES VERDI, calle Bravo Murillo 28, 28015 Madrid PELÍCULA: (versión en Castellano): “ Lunana:un yak en la clase ” (finalista a Mejor Película extranjera de los Oscar 2022) MOTIVO: Pase benéfico con el fin de recabar fondos para mejorar la vida de niños desaventajados en Bután a través de la enseñanza de la Música, proyecto conjunto de esta Asociación ( www.gnhcenterspain.org ), la Fundación para la Acción Social por la Música ( https://accionporlamusica.es ), y el programa Erasmus+ de la Unión Europea a través de la Universidad Politécnica de Cartagena (Murcia).</p>
+<p>Los donativos se pueden hacer por transferencia bancaria a la cuenta de GNH Center Spain (IBAN: ES64 1491 0001 2430 0010 6277) con un mínimo de 25 euros por persona asociada, especificando su nombre y confirmando su asistencia . También se aceptarán donativos en efectivo el día del pase.</p>
+<p>PROGRAMA : Empezará con una breve actuación musical de niños de la Fundación Acción por la Música, una breve presentación del proyecto y el pase de la película .</p>
+<p>Se servirá a continuación un vino español fuera de la sala.</p>
+<p>AFORO LIMITADO -se reservarán asientos por orden de llegada de peticiones.</p>
+<p>Espero contar con vosotros y vuestros amigos ese día !</p>
+<p>Tashi Delek !</p>
+<p>Ian Triay</p>
+<p>Presidente</p>
+<img src="assets/blog/Lunana_A_Yak_in_the_Classroom-512391213-large.jpg" alt="Proyección «Lunana: A Yak in the Classroom» · Cines Verdi" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="arriba">
+      <img src="assets/logo.png" alt="Logo GNH Center Spain">
+      <span class="nombre">GNH Center Spain</span>
+      <div class="enlaces-f">
+        <a href="index.html#filosofia">La filosofía</a>
+        <a href="index.html#centro">El centro</a>
+        <a href="index.html#actividades">Actividades</a>
+        <a href="blog.html">Noticias</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2019–2026 GNH Center Spain · Centro oficial del GNH Centre Bhutan en Europa</span>
+      <a href="aviso-legal.html">Aviso legal y privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('nav .enlaces a').forEach(a => a.addEventListener('click', () => document.querySelector('nav .enlaces').classList.remove('abierto')));
+</script>
+</body>
+</html>
