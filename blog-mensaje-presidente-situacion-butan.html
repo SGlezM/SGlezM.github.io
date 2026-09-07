@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mensaje del Presidente sobre la situación en Bután — GNH Center Spain</title>
+<meta name="description" content="Comunicado del Presidente de GNH Center Spain, Ian Triay, sobre la situación del país durante la pandemia.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<nav>
+  <div class="bar">
+    <a class="marca" href="index.html"><img src="assets/logo.png" alt="Logo GNH Center Spain">GNH Center Spain</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
+    <div class="enlaces">
+      <a href="index.html#filosofia">La filosofía</a>
+      <a href="index.html#centro">El centro</a>
+      <a href="index.html#actividades">Actividades</a>
+      <a href="blog.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pagina-hero">
+  <div class="wrap">
+    <p class="miga"><a href="index.html">Inicio</a> · <a href="blog.html">Noticias</a> · Mensaje del Presidente sobre la situa…</p>
+    <p class="kicker">Comunidad</p>
+    <h1>Mensaje del Presidente sobre la situación en Bután</h1>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="prosa">
+<p>Querid@s am i g@s ,</p>
+<p>Hace ya un año largo que nos vimos obligados a suspender nuestras actividades presenciales y ahora al fin parece que hay luz al final del túnel. Sin embargo seguiremos siendo prudentes y esperaremos a ver cómo se desarrolla la pandemia a lo largo de los meses de verano antes de reanudar nuestra actividad. Os mantendremos informados al respecto.</p>
+<p>Mientras tanto, muchos me habéis preguntado por la situación en Bután , y me complace y enorgullece decir que la gestión de la pandemia en el país ha sido hasta la fecha digna de elogio y eficacia , hasta el punto de haber llamado la atención de la prensa de calidad internacional incluyendo la americana , la inglesa y la francesa entre otras. Una parte significante de este éxito se ha debido sin duda al liderazgo ejemplar de SM el Rey , que se ha involucrado desde el principio , así como las acertadas decisiones del gobierno encabezado por un Primer Ministro que precisamente es Doctor en Medicina. Además se establecieron protocolos que si bien parecían “duros” al principio(como por ejemplo establecer una cuarentena de 21 días en hoteles especialmente preparados para ello) luego resultaron ser muy eficaces contra la propagación del virus.</p>
+<p>El país se prepara para recibir de nuevo al turismo en un futuro no lejano pero no debemos olvidar que Bután tiene como vecinos a la India y a Nepal, desde donde las noticias no han sido tan buenas.</p>
+<p>Así que esperemos que pronto podamos reunirnos de nuevo para celebrar la vuelta a la normalidad.</p>
+<p>Mientras tanto, os mando a todos un abrazo y mis mejores deseos para el futuro.</p>
+<p>Tashi Delek!</p>
+<p>Ian Triay</p>
+<p>Presidente GNH Center Spain</p>
+<div class="galeria"><img src="assets/blog/Ian-Tray-400-x-400-1.jpg" alt="Mensaje del Presidente sobre la situación en Bután" loading="lazy"><img src="assets/blog/Palacio-de-Bhutan.jpg" alt="Mensaje del Presidente sobre la situación en Bután" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="arriba">
+      <img src="assets/logo.png" alt="Logo GNH Center Spain">
+      <span class="nombre">GNH Center Spain</span>
+      <div class="enlaces-f">
+        <a href="index.html#filosofia">La filosofía</a>
+        <a href="index.html#centro">El centro</a>
+        <a href="index.html#actividades">Actividades</a>
+        <a href="blog.html">Noticias</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2019–2026 GNH Center Spain · Centro oficial del GNH Centre Bhutan en Europa</span>
+      <a href="aviso-legal.html">Aviso legal y privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('nav .enlaces a').forEach(a => a.addEventListener('click', () => document.querySelector('nav .enlaces').classList.remove('abierto')));
+</script>
+</body>
+</html>
