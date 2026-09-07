@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music4All Bhutan — GNH Center Spain</title>
+<meta name="description" content="Actualización del proyecto solidario de música impulsado junto a la comunidad para acercar la educación musical a Bután.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<nav>
+  <div class="bar">
+    <a class="marca" href="index.html"><img src="assets/logo.png" alt="Logo GNH Center Spain">GNH Center Spain</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
+    <div class="enlaces">
+      <a href="index.html#filosofia">La filosofía</a>
+      <a href="index.html#centro">El centro</a>
+      <a href="index.html#actividades">Actividades</a>
+      <a href="blog.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pagina-hero">
+  <div class="wrap">
+    <p class="miga"><a href="index.html">Inicio</a> · <a href="blog.html">Noticias</a> · Music4All Bhutan</p>
+    <p class="kicker">Proyecto</p>
+    <h1>Music4All Bhutan</h1>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="prosa">
+<p>Actualización sobre el proyecto Music4All Bhutan.</p>
+<p>El año pasado presentamos el proyecto Music4All cuyo fin es mejorar la vida de niños desaventajados en Bhutan y Nepal a través de la música , ( https://gnhcenterspain.org/nuevas-actividades-y-proyecto-de-musica/ ); proyecto en el cual colaboramos con la Universidad Politécnica de Cartagena (que proporciona fondos de la Unión Europea a través de un programa de Erasmus) ( https://bnesdg.eu/concepts/ – ) y con la Fundación Por La Música ( https://accionporlamusica.es ) que proporciona su metodología y su experiencia en muchos países.</p>
+<p>Alumnos de la Escuela de Musica en Buthan</p>
+<p>Ahora me complace enormemente poder deciros que con vuestra inestimable ayuda el proyecto sigue en marcha,y la mejor manera de poder apreciar esto es verlo en el vídeo que hemos preparado para vuestro disfrute y satisfacción en este link https://youtu.be/OPNmyAe5q7A</p>
+<p>Esp ero que este vídeo os convenza para seguir con vuestra contribución anual ( https://gnhcenterspain.org/participa/ ) sin la cual los objetivos del proyecto quedarían seriamente perjudicados.</p>
+<p>Pronto organizaremos una mesa redonda para hablar en mayor profundidad del proyecto y de las posibilidades de ir a Bhutan .</p>
+<p>Asociarse al Centro GNH Spain</p>
+<div class="galeria"><img src="assets/blog/Logo-Music-For-Buthan.jpg" alt="Music4All Bhutan" loading="lazy"><img src="assets/blog/Clases-Niños-Music-For-Buthan.jpg" alt="Music4All Bhutan" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="arriba">
+      <img src="assets/logo.png" alt="Logo GNH Center Spain">
+      <span class="nombre">GNH Center Spain</span>
+      <div class="enlaces-f">
+        <a href="index.html#filosofia">La filosofía</a>
+        <a href="index.html#centro">El centro</a>
+        <a href="index.html#actividades">Actividades</a>
+        <a href="blog.html">Noticias</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2019–2026 GNH Center Spain · Centro oficial del GNH Centre Bhutan en Europa</span>
+      <a href="aviso-legal.html">Aviso legal y privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('nav .enlaces a').forEach(a => a.addEventListener('click', () => document.querySelector('nav .enlaces').classList.remove('abierto')));
+</script>
+</body>
+</html>
