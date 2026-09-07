@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Presidente de GNH España, Ian Triay, en Onda Cero — GNH Center Spain</title>
+<meta name="description" content="Entrevista a nuestro presidente en el programa &quot;Por Fin No Es Lunes&quot; de Onda Cero.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<nav>
+  <div class="bar">
+    <a class="marca" href="index.html"><img src="assets/logo.png" alt="Logo GNH Center Spain">GNH Center Spain</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
+    <div class="enlaces">
+      <a href="index.html#filosofia">La filosofía</a>
+      <a href="index.html#centro">El centro</a>
+      <a href="index.html#actividades">Actividades</a>
+      <a href="blog.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pagina-hero">
+  <div class="wrap">
+    <p class="miga"><a href="index.html">Inicio</a> · <a href="blog.html">Noticias</a> · El Presidente de GNH España, Ian Tria…</p>
+    <p class="kicker">Medios</p>
+    <h1>El Presidente de GNH España, Ian Triay, en Onda Cero</h1>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="prosa">
+<p>El pasado 29 de Diciembre Isabel Lobo entrevisto a nuestro presidente en su programa PorFinNoEsLunes de Onda Cero, programa que tuvo la mayor audiencia en esos días y generó un gran interés tanto entre individuos como empresas.</p>
+<p>Pulsando sobre este enlace a la Entrevista a Ian Triay en ONDA CERO podréis acceder y escucharla, entrevista donde Isabel Lobo nos habla sobre Bután, El Reino de la Felicidad, un reino inhóspito que habita más cerca de lo que somos capaces de recordar.</p>
+<p>Orografías emocionales que nos conectan en una globalización única a la que todos los seres humanos no hemos llegado. Y la pregunta es ¿A qué ritmo se mueven las ambiciones del mundo?</p>
+<img src="assets/blog/2020-01-20-01-18-14-1.jpg" alt="El Presidente de GNH España, Ian Triay, en Onda Cero" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="arriba">
+      <img src="assets/logo.png" alt="Logo GNH Center Spain">
+      <span class="nombre">GNH Center Spain</span>
+      <div class="enlaces-f">
+        <a href="index.html#filosofia">La filosofía</a>
+        <a href="index.html#centro">El centro</a>
+        <a href="index.html#actividades">Actividades</a>
+        <a href="blog.html">Noticias</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2019–2026 GNH Center Spain · Centro oficial del GNH Centre Bhutan en Europa</span>
+      <a href="aviso-legal.html">Aviso legal y privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('nav .enlaces a').forEach(a => a.addEventListener('click', () => document.querySelector('nav .enlaces').classList.remove('abierto')));
+</script>
+</body>
+</html>
