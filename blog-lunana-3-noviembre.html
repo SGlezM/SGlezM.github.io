@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyección «Lunana» · 3 de noviembre — GNH Center Spain</title>
+<meta name="description" content="Encuentro presencial en torno al cine butanés, con el pase de &quot;Lunana: a yak en la clase&quot; para sostener el proyecto de música.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<nav>
+  <div class="bar">
+    <a class="marca" href="index.html"><img src="assets/logo.png" alt="Logo GNH Center Spain">GNH Center Spain</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
+    <div class="enlaces">
+      <a href="index.html#filosofia">La filosofía</a>
+      <a href="index.html#centro">El centro</a>
+      <a href="index.html#actividades">Actividades</a>
+      <a href="blog.html">Noticias</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+    </div>
+  </div>
+</nav>
+
+<div class="pagina-hero">
+  <div class="wrap">
+    <p class="miga"><a href="index.html">Inicio</a> · <a href="blog.html">Noticias</a> · Proyección «Lunana» · 3 de noviembre</p>
+    <p class="kicker">Cine</p>
+    <h1>Proyección «Lunana» · 3 de noviembre</h1>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="prosa">
+<p>Querid@s amig@s de www.gnhcenterspain.org</p>
+<p>El pasado 5 de julio os hablé de como con vuestra ayuda habíamos podido iniciar un proyecto en Bhutan que aumentara la ilusión y ampliara el porvenir de los niños menos favorecidos a través de la Música.</p>
+<p>Ahora me complace confirmar que se consiguió completar el programa de formación de los instructores de música butaneses gracias a la inestimable ayuda de la Fundación Acción por la Música en Madrid y del Programa de Erasmus+ de la Unión Europea (a través de la Universidad de Cartagena), lo cual a su vez permitió la celebración del Summer Camp piloto en Agosto que fue un gran éxito.</p>
+<p>Por eso queremos seguir apoyando el proyecto para que sea sostenible a medio plazo … y por eso hemos preparado un día especial el próximo jueves 3 de noviembre por la tarde (sobre las 6:30 de la tarde) , con el pase en español de la película butanesa “Lunana:un yak en la clase “ , que estuvo nominada al Óscar entre las mejores películas extranjeras este año.</p>
+<p>Espero poder contar con vosotros ese día y os haremos seguir más detalles del evento en las próximas semanas.</p>
+<p>Tashi Delek!</p>
+<p>Ian Triay</p>
+<p>Presidente</p>
+<img src="assets/blog/Lunana_A_Yak_in_the_Classroom-512391213-large.jpg" alt="Proyección «Lunana» · 3 de noviembre" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="arriba">
+      <img src="assets/logo.png" alt="Logo GNH Center Spain">
+      <span class="nombre">GNH Center Spain</span>
+      <div class="enlaces-f">
+        <a href="index.html#filosofia">La filosofía</a>
+        <a href="index.html#centro">El centro</a>
+        <a href="index.html#actividades">Actividades</a>
+        <a href="blog.html">Noticias</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2019–2026 GNH Center Spain · Centro oficial del GNH Centre Bhutan en Europa</span>
+      <a href="aviso-legal.html">Aviso legal y privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target);} }), {threshold:.12});
+document.querySelectorAll('.rev').forEach(el => obs.observe(el));
+document.querySelectorAll('nav .enlaces a').forEach(a => a.addEventListener('click', () => document.querySelector('nav .enlaces').classList.remove('abierto')));
+</script>
+</body>
+</html>
