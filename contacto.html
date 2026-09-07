@@ -19,8 +19,8 @@
     <button class="menu-btn" aria-label="Abrir menú" onclick="document.querySelector('nav .enlaces').classList.toggle('abierto')">☰</button>
     <div class="enlaces">
       <a href="index.html#filosofia">La filosofía</a>
-      <a href="quienes-somos.html">Quiénes somos</a>
-      <a href="programas.html">Programas</a>
+      <a href="index.html#centro">El centro</a>
+      <a href="index.html#actividades">Actividades</a>
       <a href="blog.html">Noticias</a>
       <a href="contacto.html">Contacto</a>
       <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
@@ -49,7 +49,7 @@
         <div class="icono">✉️</div>
         <h3>Escríbenos</h3>
         <p>Cuéntanos qué necesitas: programas, viajes, colaboraciones o hacerte Amig@.</p>
-        <a class="btn btn-verde" href="mailto:info@gnhcenterspain.org?subject=Informaci%C3%B3n%20GNH%20Center%20Spain">info@gnhcenterspain.org</a>
+        <a class="btn btn-verde" href="mailto:secretaria@gnhcenterspain.org?subject=Informaci%C3%B3n%20GNH%20Center%20Spain">secretaria@gnhcenterspain.org</a>
       </div>
       <div class="canal rev">
         <div class="icono">📍</div>
@@ -64,6 +64,27 @@
         <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
       </div>
     </div>
+    <div class="newsletter-box rev">
+      <h3>Recibe nuestro boletín</h3>
+      <p>Noticias, reflexiones y propuestas de GNH Center Spain para acercar la Felicidad Nacional Bruta a tu día a día.</p>
+      <form id="sib-form" method="POST" action="https://5b94c57a.sibforms.com/serve/MUIFAKY6H1nS6bwYAe6su5axx1b083PCBOCUdusxb_4vm2QbADNSo8-Nif85WlwCIaeJ3xk-0vhCW7baKOVfTMnLbWechaJWtzmWhcjlXnuW0jgMfrqp-AlAxCd12na2HMh0arWoZ2MYJgLCUYQ5_2Ct1sqoSm2q8sRa7hZtLwXu6W85VQ2aNym4caIez2-TC8cfXkgVjIJ0PNWEvQ==" data-type="subscription" style="display:flex;flex-direction:column;gap:14px;max-width:440px">
+        <div>
+          <label for="EMAIL" style="display:block;font-size:14px;font-weight:600;color:var(--tinta);margin-bottom:6px">Tu correo electrónico *</label>
+          <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="tu@email.com" required style="width:100%;padding:12px 14px;border:1px solid rgba(38,37,31,.18);border-radius:10px;font-family:inherit;font-size:15px">
+        </div>
+        <div>
+          <label for="NOMBRE" style="display:block;font-size:14px;font-weight:600;color:var(--tinta);margin-bottom:6px">Tu nombre (opcional)</label>
+          <input class="input" maxlength="200" type="text" id="NOMBRE" name="NOMBRE" autocomplete="off" placeholder="Tu nombre" style="width:100%;padding:12px 14px;border:1px solid rgba(38,37,31,.18);border-radius:10px;font-family:inherit;font-size:15px">
+        </div>
+        <label style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--tinta-suave)">
+          <input type="checkbox" id="OPT_IN" name="OPT_IN" value="1" required style="margin-top:3px">
+          <span>He leído y acepto la <a href="aviso-legal.html">Política de Privacidad</a> y consiento recibir por email noticias y comunicaciones de GNH Center Spain.</span>
+        </label>
+        <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none !important">
+        <input type="hidden" name="locale" value="es">
+        <button type="submit" class="btn btn-verde" style="align-self:flex-start">Suscribirme</button>
+      </form>
+    </div>
     <p class="aviso-nota rev" style="text-align:center;max-width:60ch;margin:34px auto 0">GNH Center Spain tratará tus datos únicamente para tramitar tu solicitud. Puedes conocer cómo ejercer tus derechos de acceso, rectificación y supresión en nuestra <a href="aviso-legal.html">política de privacidad</a>.</p>
   </div>
 </section>
@@ -75,11 +96,11 @@
       <span class="nombre">GNH Center Spain</span>
       <div class="enlaces-f">
         <a href="index.html#filosofia">La filosofía</a>
-        <a href="quienes-somos.html">Quiénes somos</a>
-        <a href="programas.html">Programas</a>
+        <a href="index.html#centro">El centro</a>
+        <a href="index.html#actividades">Actividades</a>
         <a href="blog.html">Noticias</a>
-        <a href="asociate.html">Hazte Amig@</a>
         <a href="contacto.html">Contacto</a>
+        <a class="btn btn-oro" href="asociate.html">Hazte Amig@</a>
       </div>
     </div>
     <div class="legal">
